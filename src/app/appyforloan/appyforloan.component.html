@@ -1,0 +1,29 @@
+
+  <div class="container mat-raised-button center" >
+  <form  [formGroup]="form" (ngSubmit)="ragister()">
+    
+    <div>
+       Loan Amount: <input type="number" matInput placeholder="Enter Loan Amount" formControlName="loanAmount">
+    </div>
+    <br>
+    <div>
+        Payment Frequency:<input type="number" matInput placeholder="Enter payment Frequency" formControlName="Enter Payment Frequency">
+    </div>
+    <br>
+    <div>
+       Tenure: <input type="number" matInput placeholder="tenure" formControlName="Enter Tenure">
+    </div><br>
+
+    <div>
+       InterestRate: <input type="number"  placeholder="Enter InterestRate " formControlName="Enter InterestRate">
+    </div><br>
+    <div>
+        PaymentTerm:<input type="text" matInput placeholder="Enter Payment Term" formControlName="Enter PaymentTerm">
+    </div><br>
+    <div>
+        <input type="submit">
+    </div>
+
+  </form>
+
+</div>

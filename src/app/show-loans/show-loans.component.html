@@ -1,0 +1,36 @@
+<head>
+    <style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+</style>
+</head> -->
+<table>
+    <thead>
+        <tr>
+            <th>CUSTOMER ID</th>
+            <th>LOAN AMOUNT</th>
+            <th>LOAN START DATE</th>
+            <th>LOAN MATURITY DATE</th>
+            <th>PAYMENT FREQUENCY</th>
+            <th>INTEREST RATE</th>
+            <th>PAYEMENT TEARM</th>
+            
+            
+        </tr>
+        <tr *ngFor="let data of formData">
+            <th>{{data.customerId}}</th>
+            <th>{{data.loanAmount}}</th>
+            <th>{{data.loanStartDate}}</th>
+            <th>{{data.maturityDate}}</th>
+            <th>{{data.paymentFrequency}}</th>
+            <th>{{data.interestRate}}</th>
+            <th>{{data.paymentTerm}}</th>
+            
+        </tr>
+    </thead>
+</table>
